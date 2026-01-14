@@ -16,8 +16,11 @@ const Home = () => {
         <div
           className="
             flex
+            md:flex-row
             justify-between
-            gap-x-12
+            md:gap-x-12
+            gap-y-8
+            flex-col
           "
         >
           <div
@@ -37,12 +40,14 @@ const Home = () => {
                 text-2xl
                 font-light
                 tracking-wider
-                my-6
+                my-2
                 animate-text-to-top
                 
               "
             >
               React.js Front-End Developer & Next.js
+              <br />
+              JavaScript & TypeScript Expert
             </p>
             <div
               className="
@@ -69,14 +74,14 @@ const Home = () => {
             className="
               rounded-3xl
               overflow-hidden
-              md:block
-              hidden
-              w-[50%]
+              block
+              md:w-[50%]
+              w-full
               animate-text-bigger
             "
           >
             <img
-              src="/images/main.png"
+              src="/images/My_AI.jpg"
               alt="main"
               className="
                 hover:scale-110

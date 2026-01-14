@@ -41,14 +41,12 @@ const Header = () => {
                 w-10
                 h-10
                 shadow-md
-                shadow-sky-400
-                hover:shadow-none
                 rounded-full
                 -z-50
               "
             ></div>
             <img
-              src={"/images/logo.png"}
+              src={"/images/My_AI.jpg"}
               alt="logo"
               className="
                 w-10

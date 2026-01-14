@@ -41,10 +41,10 @@ const PageTitle: React.FC<PageTitleProps> = ({
           from-blue-400
           via-purple-400
           to-emerald-400
-          ${textBig ? "md:text-7xl" : "md:text-5xl"}
+          ${textBig ? "md:text-5xl" : "md:text-3xl"}
           text-5xl
           font-bold
-          mb-6
+          mb-4
           animate-text-bigger
         `}
         style={{ fontFamily: "sans-serif" }}
