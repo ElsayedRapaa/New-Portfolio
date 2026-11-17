@@ -13,8 +13,9 @@ I began learning web development independently in 2015 and started working profe
 ## Technology Stack
 
 - React.js
+- JavaScript
+- TypeScript
 - Vite
-- TypeScript / JavaScript (project code should be checked before claiming TypeScript is used throughout)
 - Tailwind CSS
 - React Router
 - Zustand
