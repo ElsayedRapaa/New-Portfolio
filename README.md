@@ -1,25 +1,56 @@
-# Personal Portfolio
+# Elsayed Rapaa — Frontend Developer Portfolio
 
-![Project Screenshot](./public/images/project.png)
+A responsive personal portfolio built with React.js and Vite to present my frontend development background, technical skills, selected projects, and contact information.
 
-## 🌟 Overview
+## Live Portfolio
 
-This project is a modern React application built with **React-Vite** for optimal performance and developer experience. The application features a responsive design, dynamic routing, and efficient state management to provide an excellent user experience.
+https://new-portfolio-sooty-seven.vercel.app/
 
-## 🛠️ Technologies Used
+## About
 
-- **React-Vite**: A faster build tool for modern React applications.
-- **Tailwind CSS**: For utility-first styling and responsive design.
-- **React-Router**: For seamless navigation between pages.
-- **Zustand**: Lightweight state management for improved performance.
-- **React-icons**: Icon library for customizable and scalable icons.
-- **EmailJS**: For sending emails directly from the frontend.
-- **React-hot-toast**: For interactive toast notifications.
+I began learning web development independently in 2015 and started working professionally as a Frontend Developer in 2020. My main focus is building responsive, user-friendly web applications with React.js, Next.js, JavaScript, and TypeScript.
 
-## 📋 Features
+## Technology Stack
 
-- **Responsive Design**: Ensures a seamless experience on all devices.
-- **Dynamic Routing**: Enables smooth navigation with React-Router.
-- **State Management**: Utilizes Zustand for efficient state handling.
-- **Email Functionality**: Integrated with EmailJS for sending messages.
-- **Interactive Notifications**: Powered by React-hot-toast for user feedback.
+- React.js
+- Vite
+- TypeScript / JavaScript (project code should be checked before claiming TypeScript is used throughout)
+- Tailwind CSS
+- React Router
+- Zustand
+- React Icons
+- EmailJS
+- React Hot Toast
+
+## Features
+
+- Responsive layout for desktop, tablet, and mobile screens
+- Dedicated About, Experience, Projects, Skills, Resume, and Contact pages
+- Client-side routing
+- Contact form integration using EmailJS
+- Interactive UI feedback with toast notifications
+
+## Run Locally
+
+1. Clone the repository.
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Create a production build:
+
+   ```bash
+   npm run build
+   ```
+
+## Contact
+
+Professional email: Elsayedrapaa7@gmail.com
