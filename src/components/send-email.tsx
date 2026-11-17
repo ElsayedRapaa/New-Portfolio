@@ -9,11 +9,9 @@ const SendEmail = () => {
 
   const sendEmail = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     if (!form.current || isSending) return;
 
     setIsSending(true);
-
     try {
       await emailjs.sendForm(
         "service_mwu43fq",
@@ -21,7 +19,6 @@ const SendEmail = () => {
         form.current,
         "emYSGza6oL-wtUVki"
       );
-
       toast.success("Message sent successfully! Thank you for reaching out.");
       form.current.reset();
     } catch {
@@ -33,9 +30,7 @@ const SendEmail = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
-      <label className="block text-gray-300 mb-2 text-sm font-medium">
-        Email
-      </label>
+      <label className="block text-gray-300 mb-2 text-sm font-medium">Email</label>
       <input
         type="email"
         name="email"
@@ -45,9 +40,7 @@ const SendEmail = () => {
         className="w-full bg-gray-700/50 border border-gray-600 rounded-xl px-4 py-3 mb-6 focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-colors text-white"
       />
 
-      <label className="block text-gray-300 mb-2 text-sm font-medium">
-        Message
-      </label>
+      <label className="block text-gray-300 mb-2 text-sm font-medium">Message</label>
       <textarea
         name="message"
         placeholder="Your message here..."
