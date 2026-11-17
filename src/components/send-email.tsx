@@ -21,7 +21,8 @@ const SendEmail = () => {
       );
       toast.success("Message sent successfully! Thank you for reaching out.");
       form.current.reset();
-    } catch {
+    } catch (error) {
+      console.error("EmailJS send failed:", error);
       toast.error("Message could not be sent. Please try again or email me directly.");
     } finally {
       setIsSending(false);
