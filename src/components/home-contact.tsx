@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { GoCopy, GoExternalLink } from "react-icons/go";
+import { GoCopy } from "react-icons/go";
+import { LuExternalLink } from "react-icons/lu";
 
 interface HomeContactProps {
   title: string;
@@ -53,7 +54,7 @@ const HomeContact: React.FC<HomeContactProps> = ({
             aria-label={`Open ${title}`}
             className="text-gray-400 hover:text-blue-400 transition-colors"
           >
-            <GoExternalLink size={21} />
+            <LuExternalLink size={21} />
           </a>
         )}
         <button
