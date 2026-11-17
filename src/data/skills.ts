@@ -1,4 +1,4 @@
-import { FaCode, FaRegFileLines, FaVial } from "react-icons/fa6";
+import { FaCode, FaVial } from "react-icons/fa6";
 import { GoDatabase } from "react-icons/go";
 import { LuGitBranch, LuMonitorSmartphone, LuPanelsTopLeft, LuWorkflow } from "react-icons/lu";
 
