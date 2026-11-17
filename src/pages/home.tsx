@@ -31,13 +31,14 @@ const Home = () => {
                   key={item.id}
                   title={item.title}
                   contactID={item.contactID}
+                  href={item.href}
                 />
               ))}
             </div>
           </div>
           <div className="rounded-3xl overflow-hidden block md:w-[50%] w-full animate-text-bigger">
             <img
-              src="/images/My_AI.jpg"
+              src="/images/profile.jpg"
               alt="Elsayed Rapaa - Frontend Developer"
               className="hover:scale-110 duration-700 rounded-3xl h-full w-full object-cover"
             />
