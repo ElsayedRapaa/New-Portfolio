@@ -1,8 +1,9 @@
 import React from "react";
-import Container from "../components/container";
-import PageTitle from "../components/page-title";
 import { MdOutlineMailOutline, MdOutlineLocationOn } from "react-icons/md";
 import { FaRegMessage } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
+import Container from "../components/container";
+import PageTitle from "../components/page-title";
 import ContactItem from "../components/contact-item";
 import SendEmail from "../components/send-email";
 
@@ -39,6 +40,23 @@ const Contact = () => {
               bg2="bg-purple-500/20"
               color="text-purple-400"
             />
+            <a
+              href="https://wa.me/201271356094"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Contact me on WhatsApp"
+              className="block rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-green-400"
+            >
+              <ContactItem
+                icon={FaWhatsapp}
+                title="WhatsApp"
+                value="+20 1271 356 094"
+                border="border-green-500/20"
+                bg="bg-green-500/10"
+                bg2="bg-green-500/20"
+                color="text-green-400"
+              />
+            </a>
           </div>
           <div className="md:w-1/2 w-full bg-gray-800/50 border border-gray-700 rounded-lg shadow-lg p-8">
             <div className="flex items-center space-x-2 mb-8">
