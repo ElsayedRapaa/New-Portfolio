@@ -81,7 +81,7 @@ const Home = () => {
             "
           >
             <img
-              src="/images/My_AI.jpg"
+              src="/images/My_AI.png"
               alt="main"
               className="
                 hover:scale-110
