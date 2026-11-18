@@ -16,8 +16,8 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="relative cursor-pointer" aria-label="Elsayed Rapaa home">
             <img
-              src="/images/profile.jpg"
-              alt="Elsayed Rapaa"
+              src="/images/logo.png"
+              alt="Elsayed Rapaa logo"
               className="w-10 h-10 rounded-full object-cover hover:shadow-circle-glow hover:scale-110 transition-all"
             />
           </Link>
