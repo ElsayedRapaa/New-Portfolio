@@ -38,7 +38,7 @@ const Home = () => {
           </div>
           <div className="rounded-3xl overflow-hidden block md:w-[50%] w-full animate-text-bigger">
             <img
-              src="/images/profile.jpg"
+              src="/images/My_AI.jpg"
               alt="Elsayed Rapaa - Frontend Developer"
               className="hover:scale-110 duration-700 rounded-3xl h-full w-full object-cover"
             />
