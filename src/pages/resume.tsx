@@ -67,13 +67,54 @@ const Resume = () => {
 
           <section className="space-y-6">
             <div className="flex items-center space-x-4">
+              <MdWorkOutline size={28} className="text-blue-400" />
+              <h2 className="text-2xl font-semibold text-white">Professional Experience</h2>
+            </div>
+            {experience.map((item) => (
+              <div
+                key={item.role}
+                className="border border-gray-700 bg-gray-800/50 rounded-xl p-6 sm:p-8 shadow-lg hover:border-blue-500/40 transition-colors"
+              >
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-6">
+                  <div className="min-w-0">
+                    <h3 className="text-xl font-semibold text-white">
+                      {item.role}
+                    </h3>
+                    <p className="text-blue-400 font-medium mt-2">
+                      {item.company}
+                    </p>
+                  </div>
+                  <span className="inline-flex w-fit shrink-0 items-center rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-sm font-semibold text-blue-300">
+                    {item.period}
+                  </span>
+                </div>
+                <div className="space-y-3">
+                  {item.points.map((point, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <TbPointFilled size={20} className="text-blue-400 mt-1 shrink-0" />
+                      <p className="text-gray-300 leading-relaxed">{point}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </section>
+
+          <section className="space-y-6">
+            <div className="flex items-center space-x-4">
               <LuBookOpen size={28} className="text-blue-400" />
               <h2 className="text-2xl font-semibold text-white">Learning Journey</h2>
             </div>
-            <div className="border border-gray-700 bg-gray-800/50 rounded-lg p-8 shadow-lg">
-              <h3 className="text-lg font-semibold text-white">Self-Directed Web Development Learning</h3>
-              <p className="text-blue-400 font-semibold mt-2">2015 – Present</p>
-              <p className="leading-relaxed text-gray-300 mt-3">
+            <div className="border border-gray-700 bg-gray-800/50 rounded-xl p-6 sm:p-8 shadow-lg">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                <h3 className="text-lg font-semibold text-white">
+                  Self-Directed Web Development Learning
+                </h3>
+                <span className="inline-flex w-fit shrink-0 items-center rounded-full border border-purple-500/30 bg-purple-500/10 px-4 py-2 text-sm font-semibold text-purple-300">
+                  2015 – Present
+                </span>
+              </div>
+              <p className="leading-relaxed text-gray-300 mt-4">
                 Began learning web development independently in 2015 through
                 online learning resources, documentation, technical articles,
                 developer communities, and consistent hands-on practice.
@@ -81,28 +122,6 @@ const Resume = () => {
                 work and independent projects.
               </p>
             </div>
-          </section>
-
-          <section className="space-y-6">
-            <div className="flex items-center space-x-4">
-              <MdWorkOutline size={28} className="text-blue-400" />
-              <h2 className="text-2xl font-semibold text-white">Professional Experience</h2>
-            </div>
-            {experience.map((item) => (
-              <div key={item.role} className="border border-gray-700 bg-gray-800/50 rounded-lg p-8 shadow-lg">
-                <h3 className="text-lg font-semibold text-white">{item.role}</h3>
-                <span className="block text-blue-400 font-semibold mt-2">{item.company}</span>
-                <span className="block text-sm text-gray-400 mb-4">{item.period}</span>
-                <div className="space-y-3">
-                  {item.points.map((point, index) => (
-                    <div key={index} className="flex items-start space-x-2">
-                      <TbPointFilled size={20} className="text-gray-300 mt-1 shrink-0" />
-                      <p className="text-gray-300 leading-relaxed">{point}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
           </section>
 
           <section className="space-y-6">
